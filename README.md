@@ -1,4 +1,4 @@
-# CRUD_JSP Reservas Hoteles
+# CRUD_JSP Reserva tu hotel
 
 La temática de mi CRUD es sobre reservas de hoteles, el cliente desde la web podra crear una reserva de un hotel, modificarla
 o borrarla
