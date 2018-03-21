@@ -42,8 +42,8 @@
                   conexion.close();
                 %>
                 <br>
-                <a href="listadoCliente.jsp">Hacer otra modificación</a>
-                <a href="listadoCliente.jsp">Aceptar</a>
+                <a class="hacerloDeNuevo" href="listadoCliente.jsp">Hacer otra modificación</a>
+                <a class="aceptarNuevo" href="listadoCliente.jsp">Aceptar</a>
 
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>

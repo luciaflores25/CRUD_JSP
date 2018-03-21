@@ -22,15 +22,15 @@
             </nav>
             <section>
 
-                <h1>AVISO</h1>
-                <p>¿Está seguro de que desea dar de baja al cliente?</p>
+                <h1 class="avisoBorrado">AVISO</h1>
+                <p class="seguro">¿Está seguro de que desea dar de baja al cliente?</p>
                     <form method="post" action="borraCliente.jsp">
                         <input type="hidden" name="clienteID" value="<%=request.getParameter("clienteID")%>"/>
-                        <button type="submit">Aceptar</button>
+                        <button class="aceptarConfirmacion" type="submit">Aceptar</button>
                     </form>
                     
                     <form action="listadoCliente.jsp">
-                        <button style="float:right;">Cancelar</button>
+                        <button class="cancelarConfirmacion">Cancelar</button>
                     </form>
 
             </section>

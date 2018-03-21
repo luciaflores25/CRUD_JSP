@@ -22,7 +22,8 @@
                 <span><a href="index.html">Página de Inicio</a></span>
             </nav>
             <section>
-                <h1>No se han podido guardar los datos, ese DNI ya está registrado</h1>
+                <h1 class="errorH">No se han podido guardar los datos, ese DNI ya está registrado</h1>
+                 <a class="nuevoIntento" href="nuevoCliente">Intentarlo de nuevo</a>
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->

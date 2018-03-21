@@ -53,8 +53,8 @@
 
                 %>
                 <br>
-                <a href="nuevaReserva.jsp">Hacer otra reserva</a>
-                <a href="listadoReservas.jsp">Aceptar</a>
+                <a class="hacerloDeNuevo" href="nuevaReserva.jsp">Hacer otra reserva</a>
+                <a class="aceptarNuevo" href="listadoReservas.jsp">Aceptar</a>
             </section>
 
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>

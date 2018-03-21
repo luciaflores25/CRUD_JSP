@@ -22,15 +22,15 @@
             </nav>
             <section>
 
-                <h1>AVISO</h1>
-                <p>¿Está seguro de que desea cancelar la reserva?</p>
+                <h1 class="avisoBorrado">AVISO</h1>
+                <p class="seguro">¿Está seguro de que desea cancelar la reserva?</p>
                     <form method="post" action="borraReserva.jsp">
                         <input type="hidden" name="reservaID" value="<%=request.getParameter("reservaID")%>"/>
-                        <button type="submit">Aceptar</button>
+                        <button class="aceptarConfirmacion" type="submit">Aceptar</button>
                     </form>
                     
-                    <form action="listadoReserva.jsp">
-                        <button style="float:right;">Cancelar</button>
+                    <form action="listadoReservas.jsp">
+                        <button class="cancelarConfirmacion">Cancelar</button>
                     </form>
 
             </section>

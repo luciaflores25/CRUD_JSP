@@ -49,9 +49,11 @@
 
 
                 %>
+                
+                <h2 class="mensajeGrabaReserva">El cliente se ha añadido correctamente</h2>
                 <br>
-                <a href="nuevoCliente.jsp">Dar de alta otro cliente</a>
-                <a href="listadoCliente.jsp">Aceptar</a>
+                <a class="hacerloDeNuevo" href="nuevoCliente.jsp">Dar de alta otro cliente</a>
+                <a class="aceptarNuevo" href="listadoCliente.jsp">Aceptar</a>
             </section>
 
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
