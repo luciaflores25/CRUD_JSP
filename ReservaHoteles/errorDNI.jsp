@@ -22,15 +22,7 @@
                 <span><a href="index.html">Página de Inicio</a></span>
             </nav>
             <section>
-                <form method="post" action="grabaReserva.jsp" class="formulario">
-                    <h2 class="tituloFormulario">Añadir nueva reserva</h2>
-                    <div class="contenedorInputs">
-                        <input class="inputSmall" type="text" name="paisHotel" placeholder="País Hotel" required>
-                        <input class="inputGrande" type="text" name="nombreHotel" placeholder="Nombre Hotel" required>
-                        <input class="inputSmall" type="text" name="clienteID" placeholder="Código Cliente" required><br/>
-                        <input class="botonFormulario" type="submit" value="Añadir">
-                    </div>
-                </form>
+                <h1>No se han podido guardar los datos, ese DNI ya está registrado</h1>
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->

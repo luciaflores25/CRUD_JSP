@@ -17,6 +17,9 @@
                 <h1 id="rotulo">HAZ TUS RESERVAS</h1>
                 <p id="web">ReservaHoteles.com</p>
             </header>
+            <nav>
+                <span><a href="index.html">Página de Inicio</a></span>
+            </nav>
             <section>
                 <%
                   Class.forName("com.mysql.jdbc.Driver");
@@ -27,7 +30,7 @@
 
                   s.close();
                 %>	
-                <script>document.location = "index.jsp"</script> 
+                <script>document.location = "listadoReserva.jsp"</script> 
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->

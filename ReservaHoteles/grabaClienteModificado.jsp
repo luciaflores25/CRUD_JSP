@@ -17,6 +17,9 @@
                 <h1 id="rotulo">HAZ TUS RESERVAS</h1>
                 <p id="web">ReservaHoteles.com</p>
             </header>
+            <nav>
+                <span><a href="index.html">Página de Inicio</a></span>
+            </nav>
             <section>
                 <%
                   Class.forName("com.mysql.jdbc.Driver");
@@ -25,19 +28,22 @@
 
                   request.setCharacterEncoding("UTF-8");
 
-                  String actualizacion = "UPDATE reserva SET "
-                          + "nombreHotel='" + request.getParameter("nombreHotel")
-                          + "', nombreCliente='" + request.getParameter("nombreCliente")
+                  String actualizacion = "UPDATE cliente SET "
+                          + "nombreCliente='" + request.getParameter("nombreCliente")
                           + "', apellidosCliente='" + request.getParameter("apellidosCliente")
+                          + "', DniCliente='" + request.getParameter("DniCliente")
+                          + "', direccionCliente='" + request.getParameter("direccionCliente")
                           + "', EmailCliente='" + request.getParameter("EmailCliente")
-                          + "' WHERE reservaID=" + Integer.valueOf(request.getParameter("reservaID"));
+                          + "' WHERE clienteID='" + request.getParameter("clienteID") + "'";
                   s.execute(actualizacion);
-                  out.println("La reserva se ha modificado correctamente");
+                  out.println("<h2 class=\"mensajeGrabaReserva\">");
+                  out.println("El cliente se ha modificado correctamente. </h2>");
 
                   conexion.close();
                 %>
                 <br>
-                <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Aceptar</button>
+                <a href="listadoCliente.jsp">Hacer otra modificación</a>
+                <a href="listadoCliente.jsp">Aceptar</a>
 
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>

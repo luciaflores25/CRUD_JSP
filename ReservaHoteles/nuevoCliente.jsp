@@ -22,12 +22,14 @@
                 <span><a href="index.html">Página de Inicio</a></span>
             </nav>
             <section>
-                <form method="post" action="grabaReserva.jsp" class="formulario">
-                    <h2 class="tituloFormulario">Añadir nueva reserva</h2>
+                <form method="post" action="grabaCliente.jsp" class="formulario">
+                    <h2 class="tituloFormulario">Añadir nuevo cliente</h2>
                     <div class="contenedorInputs">
-                        <input class="inputSmall" type="text" name="paisHotel" placeholder="País Hotel" required>
-                        <input class="inputGrande" type="text" name="nombreHotel" placeholder="Nombre Hotel" required>
-                        <input class="inputSmall" type="text" name="clienteID" placeholder="Código Cliente" required><br/>
+                        <input class="inputSmall" type="text" name="nombreCliente" placeholder="Nombre cliente" required>
+                        <input class="inputGrande" type="text" name="apellidosCliente" placeholder="Apellidos" required>
+                        <input class="inputGrande" type="text" maxlength="9" name="DniCliente" placeholder="DNI" required>
+                        <input class="inputSmall" type="text" name="direccionCliente" placeholder="Dirección" required><br/>
+                        <input class="inputGrande" type="text" name="EmailCliente" placeholder="Email" required>
                         <input class="botonFormulario" type="submit" value="Añadir">
                     </div>
                 </form>

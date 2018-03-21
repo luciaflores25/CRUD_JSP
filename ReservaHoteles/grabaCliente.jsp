@@ -29,32 +29,29 @@
                   request.setCharacterEncoding("UTF-8");
 
                   // Comprueba la existencia del número de socio introducido
-                  String consultaNumSocio = "SELECT * FROM cliente WHERE clienteID = " + Integer.valueOf(request.getParameter("clienteID"));
+                  String consultaNumSocio = "SELECT * FROM cliente WHERE DniCliente LIKE '" + request.getParameter("DniCliente") + "'";
 
                   ResultSet numeroDeSocios = s.executeQuery(consultaNumSocio);
                   numeroDeSocios.last();
 
                   if (numeroDeSocios.getRow() != 0) {
-                    String insercion = "INSERT INTO reserva (nombreHotel, paisHotel, clienteID) VALUES ("
-                            + "'" + request.getParameter("nombreHotel")
-                            + "', '" + request.getParameter("paisHotel")
-                            + "', " + Integer.valueOf(request.getParameter("clienteID")) + ")";
-
-                    s.execute(insercion);
-
-                    out.println("<h2 class=\"mensajeGrabaReserva\">");
-                    out.println("Ha realizado la reserva correctamente.</h2>");
-
+                    response.sendRedirect("errorDNI.jsp");
                   } else {
-                    response.sendRedirect("errorCliente.jsp");
+                    String insercion = "INSERT INTO cliente (nombreCliente, apellidosCliente, DniCliente, direccionCliente, EmailCliente) VALUES ("
+                            + "'" + request.getParameter("nombreCliente")
+                            + "', '" + request.getParameter("apellidosCliente")
+                            + "', '" + request.getParameter("DniCliente")
+                            + "', '" + request.getParameter("direccionCliente") 
+                            + "', '" + request.getParameter("EmailCliente")+ "')";
+                    s.execute(insercion);
                   }
                   conexion.close();
-                  
+
 
                 %>
                 <br>
-                <a href="nuevaReserva.jsp">Hacer otra reserva</a>
-                <a href="listadoReservas.jsp">Aceptar</a>
+                <a href="nuevoCliente.jsp">Dar de alta otro cliente</a>
+                <a href="listadoCliente.jsp">Aceptar</a>
             </section>
 
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>

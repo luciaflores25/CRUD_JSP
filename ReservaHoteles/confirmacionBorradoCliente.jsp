@@ -1,5 +1,5 @@
-<%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <title>Reserva tu hotel - Lucía Flores</title>
     </head>
-
     <body>
         <div id="wrapper">
             <header>
@@ -22,15 +21,18 @@
                 <span><a href="index.html">Página de Inicio</a></span>
             </nav>
             <section>
-                <form method="post" action="grabaReserva.jsp" class="formulario">
-                    <h2 class="tituloFormulario">Añadir nueva reserva</h2>
-                    <div class="contenedorInputs">
-                        <input class="inputSmall" type="text" name="paisHotel" placeholder="País Hotel" required>
-                        <input class="inputGrande" type="text" name="nombreHotel" placeholder="Nombre Hotel" required>
-                        <input class="inputSmall" type="text" name="clienteID" placeholder="Código Cliente" required><br/>
-                        <input class="botonFormulario" type="submit" value="Añadir">
-                    </div>
-                </form>
+
+                <h1>AVISO</h1>
+                <p>¿Está seguro de que desea dar de baja al cliente?</p>
+                    <form method="post" action="borraCliente.jsp">
+                        <input type="hidden" name="clienteID" value="<%=request.getParameter("clienteID")%>"/>
+                        <button type="submit">Aceptar</button>
+                    </form>
+                    
+                    <form action="listadoCliente.jsp">
+                        <button style="float:right;">Cancelar</button>
+                    </form>
+
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->
