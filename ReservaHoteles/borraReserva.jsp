@@ -30,7 +30,7 @@
 
                   s.close();
                 %>	
-                <script>document.location = "listadoReserva.jsp"</script> 
+                <script>document.location = "listadoReservas.jsp"</script> 
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->
