@@ -23,7 +23,7 @@
             </nav>
             <section>
                 <h1 class="errorH">Ese cliente no exixte</h1>
-                <a class="nuevoIntento" href="nuevoCliente">Intentarlo de nuevo</a>
+                <a class="nuevoIntento" href="nuevoCliente.jsp">Intentarlo de nuevo</a>
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div><!-- Cierra el wrapper -->
