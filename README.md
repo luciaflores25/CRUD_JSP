@@ -1,9 +1,9 @@
 ﻿# CRUD Reserva de hoteles
 Trabajo compartido entre las asignaturas de programación y base de datos donde se realizará un CRUD (create, read, update and delete) en JSP y MySql
 ## Descripción
-Temática CRUD: reservas de los hoteles, el administrador de las reservas desde la web podra añadir una reserva de un hotel, modificarla o borrarla
+Temática CRUD: reservas de hoteles, el administrador de las reservas desde la web podra añadir una reserva de un hotel o borrarla
 
-El administrador a la hora de añadir una reserva deberá indicar el código de la reserva, nombre del hotel, nombre del cliente, apellidos del cliente y email del cliente.
+El administrador también podrá añadir clientes que se podrán modificar y dar de baja
 
 ## Capturas
 
@@ -43,5 +43,5 @@ El administrador a la hora de añadir una reserva deberá indicar el código de 
 ### grabaCliente.jsp --> Aquí se muestra que el cliente se ha añadido correctamente
 <img src="img/11.png">
 
-### grabaSocio.jsp --> Aqui se muestra que el socio se ha dado de alta correctamente
+### grabaReserva.jsp --> Aqui se muestra que el socio se ha dado de alta correctamente
 <img src="img/12.png">
