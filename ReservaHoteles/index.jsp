@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,32 +22,33 @@
 
                 <h2 id="tituloOpciones">Elige la acción que quieres realizar:</h2>
 
-                <div class="slider">
-
-                    <a href="listadoReservas.jsp">
+                    <a href="nuevoCliente.jsp">
                         
-                        <div id="img1" class="imagenesSlider">
-                            <img src="images/listadoReservas.png">
-                        </div></a>
-
-                    <a href="nuevaReserva.jsp">
-                        <div id="img2" class="imagenesSlider">
-                            <img src="images/addReserva.png">
-                        </div></a>
-
+                        <div id="img1" class="imagenesIndex">
+                            <img src="images/addCliente.png">
+                        </div>
+                    </a>
 
                     <a href="listadoCliente.jsp">
-                        <div id="img3" class="imagenesSlider">
+                        <div id="img2" class="imagenesIndex">
                             <img src="images/listadoClientes.png">
-                        </div></a>
+                        </div>
+                    </a>
 
-                    <a href="nuevoCliente.jsp">
-                        <div id="img4" class="imagenesSlider">
-                            <img src="images/addCliente.png">
-                        </div></a>
 
-                </div>
+                    <a href="nuevaReserva.jsp">
+                        <div id="img3" class="imagenesIndex">
+                            <img src="images/addReserva.png">
+                        </div>
+                    </a>
 
+                    <a href="listadoReservas.jsp">
+                        <div id="img4" class="imagenesIndex">
+                            <img src="images/listadoReservas.png">
+                        </div>
+                    </a>
+                <div id="fondoIndex"></div>
+                
             </section>
             <footer>Lucía Flores Padilla - CRUD Reserva Hoteles ©</footer>
         </div>

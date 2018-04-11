@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        <title>Reserva tu hotel - Lucía Flores</title>
+        <title>Listado clientes - Reserva tu hotel</title>
     </head>
 
     <body>
@@ -19,10 +19,10 @@
                 <p id="web">ReservaHoteles.com</p>
             </header>
             <nav>
-                <span><a href="index.html">Página de Inicio</a></span>
+                <span><a href="index.jsp">Página de Inicio</a></span>
             </nav>
             <section>
-
+                <h2 class="tituloListado">Listado de clientes</h2>
                 <%
                   Class.forName("com.mysql.jdbc.Driver");
                   Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/reservaHoteles", "root", "");
@@ -30,11 +30,11 @@
 
                   ResultSet listado = s.executeQuery("SELECT * FROM cliente");
                 %>
-                <div id="estiloTabla">
+                <div id="estiloTablaCliente">
                     <table>
                         <thead>
                             <tr>
-                                <th id="bordeIzqArriba">Código cliente</th><th>Nombre</th><th>Apellidos</th><th>DNI</th><th>Dirección</th><th id="bordeDrchArriba">Email</th><th></th><th></th>
+                                <th>Código cliente</th><th>Nombre</th><th>Apellidos</th><th>DNI</th><th>Dirección</th><th>Email</th><th></th><th></th>
                             </tr>
                         </thead>
 
@@ -56,7 +56,7 @@
                                 <input type="hidden" name="DniCliente" value="<%=listado.getString("DniCliente")%>">
                                 <input type="hidden" name="direccionCliente" value="<%=listado.getString("direccionCliente")%>">
                                 <input type="hidden" name="EmailCliente" value="<%=listado.getString("EmailCliente")%>">
-                                <button type="submit">Modificar</button>
+                                <button type="submit" class="botonModificar">Modificar</button>
                                 <input type="hidden" name="clienteID" value="<%=listado.getString("clienteID")%>"/>                          
 
                             </form>
@@ -67,7 +67,7 @@
                         <td>
                             <form method="get" action="confirmacionBorradoCliente.jsp">
                                 <input type="hidden" name="clienteID" value="<%=listado.getString("clienteID")%>"/>
-                                <button type="submit">Borrar</button>
+                                <button type="submit" class="botonBorrar">Borrar</button>
                             </form>
                         </td></tr>
                         <%

@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        <title>Reserva tu hotel - Lucía Flores</title>
+        <title>Borrar cliente - Reserva tu hotel</title>
     </head>
     <body>
         <div id="wrapper">
@@ -18,7 +18,7 @@
                 <p id="web">ReservaHoteles.com</p>
             </header>
             <nav>
-                <span><a href="index.html">Página de Inicio</a></span>
+                <span><a href="index.jsp">Página de Inicio</a></span>
             </nav>
             <section>
                 <%

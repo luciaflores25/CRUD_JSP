@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        <title>Reserva tu hotel - Lucía Flores</title>
+        <title>Listado reservas - Reserva tu hotel</title>
     </head>
 
     <body>
@@ -19,10 +19,10 @@
                 <p id="web">ReservaHoteles.com</p>
             </header>
             <nav>
-                <span><a href="index.html">Página de Inicio</a></span>
+                <span><a href="index.jsp">Página de Inicio</a></span>
             </nav>
             <section>
-
+                <h2 class="tituloListado">Listado de reservas</h2>
                 <%
                   Class.forName("com.mysql.jdbc.Driver");
                   Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/reservaHoteles", "root", "");
@@ -30,11 +30,11 @@
 
                   ResultSet listado = s.executeQuery("SELECT * FROM cliente INNER JOIN reserva ON cliente.clienteID = reserva.clienteID");
                 %>
-                <div id="estiloTabla">
+                <div id="estiloTablaReservas">
                     <table>
                         <thead>
                             <tr>
-                                <th id="bordeIzqArriba">Nº de Reserva</th><th>Nombre Hotel</th><th>País Hotel</th><th>Nombre Cliente</th><th>Apellidos</th><th>DNI</th><th>Dirección</th><th id="bordeDrchArriba">Email</th><th></th>
+                                <th>Nº de Reserva</th><th>Nombre Hotel</th><th>País Hotel</th><th>Nombre Cliente</th><th>Apellidos</th><th>DNI</th><th>Dirección</th><th>Email</th><th></th>
                             </tr>
                         </thead>
 
@@ -54,7 +54,7 @@
                         <td>
                             <form method="get" action="confirmacionBorrado.jsp">
                                 <input type="hidden" name="reservaID" value="<%=listado.getString("reservaID")%>"/>
-                                <button type="submit">Cancelar</button>
+                                <button type="submit" class="botonBorrar">Cancelar</button>
                             </form>
                         </td></tr>
                         <%

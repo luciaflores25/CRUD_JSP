@@ -53,22 +53,22 @@ header{
 }
 
 #web{
-	color: black;
-	position: relative;
-	top: 70px;
-	left: 90px;
-	font-family: monospace;
-	font-size: 15px;
-	font-weight: bold;
+    color: black;
+    position: relative;
+    top: 70px;
+    left: 90px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 section{
-	height: 600px;
-	background-color: white;
-	box-shadow: -1px 3px 97px 12px black;
-	border-radius: 15px;
-	background-image: url(images/background.jpg);
-
+    background-color: antiquewhite;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 15px;
+    box-shadow: -1px 3px 97px 12px black;
 }
 
 footer{
@@ -82,6 +82,7 @@ footer{
 }
 
 
+
 /*
 FORMULARIOS DE AÑADIR Y DE MODIFICAR
 */
@@ -93,6 +94,7 @@ FORMULARIOS DE AÑADIR Y DE MODIFICAR
     max-width: 500px;
     background: white;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .tituloFormulario{
@@ -140,17 +142,21 @@ input{
 }
 
 
-
-
 /*
-    Estilo listado
+    Estilo listado Cliente y reservas
 */
-#estiloTabla{
+
+.tituloListado{
+    text-align: center;
+    padding: 20px;
+}
+
+#estiloTablaCliente{
 	margin: 0px auto;
-	width: 1000px;
-	border-radius: 10px;
-        position: relative;
-        top: 25px;
+}
+
+#estiloTablaReservas{
+	margin: 0px auto;
 }
 
 table{
@@ -161,25 +167,8 @@ table{
 }
 
 th, td{
-	padding: 20px;
+	padding: 15px;
 }
-
-#bordeIzqArriba{
-	border-top-left-radius: 10px;
-}
-
-#bordeIzqAbajo{
-	border-bottom-left-radius: 10px;
-}
-
-#bordeDrchArriba{
-	border-top-right-radius: 10px;
-}
-
-#bordeDrchAbajo{
-	border-bottom-right-radius: 10px;
-}
-
 
 thead{
 	background-color: rgb(125,182,173);
@@ -196,13 +185,34 @@ tr:hover td{
 	color: rgb(230,123,98);
 }
 
+.botonModificar{
+    background-color: darkcyan;
+    padding: 7px 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid darkturquoise;
+    cursor: pointer;
+}
+
+.botonBorrar{
+    background-color: coral;
+    padding: 7px 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid burlywood;
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+}
 
 
 
 /*
-ESTILO DEL SLIDER
+ESTILO DEL INDEX
 */
-.imagenesSlider{
+.imagenesIndex{
 	width: 300px;
 	height: 200px;
 	margin: auto;
@@ -216,9 +226,7 @@ ESTILO DEL SLIDER
 #tituloOpciones{
 	width: 600px;
 	font-size: 26px;
-	position: relative;
-	top: 10px;
-	left: 400px;
+        margin: 0 auto;
 }
 #img1{
 	width: 250px;
@@ -252,11 +260,20 @@ ESTILO DEL SLIDER
 	left: 420px;
 }
 
+#fondoIndex{
+    clear: both;
+    margin-bottom: 80px;
+}
+
 
 
 /*
     ESTILO CONFIRMACION BORRADO DE RESERVAS Y CLIENTES
 */
+
+.marcoAviso{
+    margin-bottom: 50px;
+}
 
 .avisoBorrado{
     text-align: center;
@@ -274,22 +291,52 @@ ESTILO DEL SLIDER
 .cancelarConfirmacion{
     position: relative;
     top: 50px;
-    left: 630px;
+    left: 588px;
     background: red;
     color: white;
+    border: 1px solid darkorange;
+    border-radius: 10px;
     font-weight: bold;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 .aceptarConfirmacion{
     position: relative;
     top: 89px;
-    left: 550px;
+    left: 500px;
     background: green;
+    border: 1px solid darkseagreen;
+    border-radius: 10px;
     color: white;
     font-weight: bold;
     padding: 10px 10px;
+    cursor: pointer;
 }
+
+
+
+/*
+    Estilos de los errores cliente y dni
+*/
+
+.errorH{
+    text-align: center;
+    padding: 15px;
+}
+
+.nuevoIntento{
+   background: lightcoral;
+   text-decoration: none;
+   color: white;
+   padding: 5px;
+   border-radius: 5px;
+   font-weight: bold;
+   position: relative;
+   left: 500px; 
+   cursor: pointer;
+}
+
 
 
 /*
@@ -320,26 +367,5 @@ ESTILO DEL SLIDER
     border-radius: 5px;
     font-weight: bold;
     position: relative;
-    left: 397px;
+    left: 430px;
 }
-
-/*
-    Estilos de los errores cliente y dni
-*/
-
-.errorH{
-    text-align: center;
-    padding: 15px;
-}
-
-.nuevoIntento{
-   background: lightcoral;
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    position: relative;
-    left: 510px; 
-}
-

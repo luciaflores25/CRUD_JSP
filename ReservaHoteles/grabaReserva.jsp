@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        <title>Reserva tu hotel - Lucía Flores</title>
+        <title>Add reserva - Reserva tu hotel</title>
     </head>
     <body>
         <div id="wrapper">
@@ -25,32 +25,25 @@
                   Class.forName("com.mysql.jdbc.Driver");
                   Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/reservaHoteles", "root", "");
                   Statement s = conexion.createStatement();
-
                   request.setCharacterEncoding("UTF-8");
-
+                  
                   // Comprueba la existencia del número de socio introducido
                   String consultaNumSocio = "SELECT * FROM cliente WHERE clienteID = " + Integer.valueOf(request.getParameter("clienteID"));
-
                   ResultSet numeroDeSocios = s.executeQuery(consultaNumSocio);
                   numeroDeSocios.last();
-
                   if (numeroDeSocios.getRow() != 0) {
                     String insercion = "INSERT INTO reserva (nombreHotel, paisHotel, clienteID) VALUES ("
                             + "'" + request.getParameter("nombreHotel")
                             + "', '" + request.getParameter("paisHotel")
                             + "', " + Integer.valueOf(request.getParameter("clienteID")) + ")";
-
                     s.execute(insercion);
-
                     out.println("<h2 class=\"mensajeGrabaReserva\">");
                     out.println("Ha realizado la reserva correctamente.</h2>");
-
                   } else {
                     response.sendRedirect("errorCliente.jsp");
                   }
                   conexion.close();
                   
-
                 %>
                 <br>
                 <a class="hacerloDeNuevo" href="nuevaReserva.jsp">Hacer otra reserva</a>
