@@ -36,7 +36,7 @@ En el caso de que se pulse el botón añadir (formulario de nuevoCliente) o modi
 
 ### [grabaClienteModificado.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/grabaClienteModificado.jsp) 
 Esta página aparece cuando se pulsa el botón modificar y el cliente se ha modificado correctamente sin ningún fallo. Al pulsar aceptar te llevará al listado de todos los clientes para visualizar que se ha añadido correctamente, y al pulsar hacer otra modificación te llevará también al listado por si se desea hacer otra modificación. </br>
-<img src="img/grabaClienteModificado.PNG">
+<img src="img/grabaClienteModificado.PNG.png">
 
 ### [confirmacionBorradoCliente.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/confirmacionBorradoCliente.jsp) 
 Desde la página del listado de todos los clientes también se pueden dar de baja pulsando en "Borrar", donde aparecerá la siguiente confirmación. </br>
