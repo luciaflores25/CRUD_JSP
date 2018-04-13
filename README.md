@@ -11,19 +11,11 @@ Las reservas solo se pueden añadir y cancelar, no se pueden modificar.
 ## Explicación de la APP con capturas de pantalla
 
 ### [index.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/index.jsp)
-El index es la página principal, donde se puede elegir entre:
-	* Añadir un cliente
-	* Ver un listado de clientes
-	* Añadir una reserva
-	* Ver un listado de reservas
+El index es la página principal, donde se puede elegir entre: añadir un cliente, ver un listado de clientes, añadir una reserva y ver un listado de reservas.
 <img src="img/index.PNG">
 
 ### [nuevoCliente.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/nuevoCliente.jsp) 
-Al pulsar en el icono de añadir un cliente aparece el siguiente formulario donde hay que escribir los siguientes campos (El código de cada cliente se va auto incrementando, por lo que no hay que ponerlo):
-	* Nombre del cliente
-	* Apellidos
-	* DNI
-	* Email
+Al pulsar en el icono de añadir un cliente aparece el siguiente formulario donde hay que escribir los siguientes campos (El código de cada cliente se va auto incrementando, por lo que no hay que ponerlo): nombre del cliente, apellidos, DNI, email
 <img src="img/nuevoCliente.PNG">
 
 ### [grabaCliente.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/grabaCliente.jsp) 
@@ -53,10 +45,7 @@ Desde la página del listado de todos los clientes también se pueden dar de baj
 Para hacer una reserva volvemos al index.jsp
 
 ### [nuevaReserva.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/nuevaReserva.jsp) 
-Desde el index al pulsar en el icono de añadir una reserva aparece el siguiente formulario donde hay que escribir los siguientes campos (El código de cada reserva se va auto incrementando, por lo que no hay que ponerlo): </br> Para este formulario hay que recordar el código del cliente, de donde se extraen los datos del cliente al que corresponde el código introducido para mostrarlo en el listado de las reservas.
-	* País Hotel
-	* Nombre Hotel
-	* Código cliente
+Desde el index al pulsar en el icono de añadir una reserva aparece el siguiente formulario donde hay que escribir los siguientes campos (El código de cada reserva se va auto incrementando, por lo que no hay que ponerlo): país del hotel, nombre del hotel y código cliente </br> Para este formulario hay que recordar el código del cliente, de donde se extraen los datos del cliente al que corresponde el código introducido para mostrarlo en el listado de las reservas.
 <img src="img/nuevaReserva.PNG">
 
 ### [listadoReservas.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/listadoReservas.jsp) 
