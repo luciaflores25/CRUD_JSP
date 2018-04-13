@@ -12,7 +12,7 @@ Las reservas solo se pueden añadir y cancelar, no se pueden modificar.
 
 ### [index.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/index.jsp)
 El index es la página principal, donde se puede elegir entre: añadir un cliente, ver un listado de clientes, añadir una reserva y ver un listado de reservas. </br>
-<img src="img/index.PNG">
+<img src="img/index.PNG.png">
 
 ### [nuevoCliente.jsp](https://github.com/luciaflores25/CRUD_JSP/blob/master/ReservaHoteles/nuevoCliente.jsp) 
 Al pulsar en el icono de añadir un cliente aparece el siguiente formulario donde hay que escribir los siguientes campos (El código de cada cliente se va auto incrementando, por lo que no hay que ponerlo): nombre del cliente, apellidos, DNI y email. </br>
